@@ -1,0 +1,231 @@
+@font-face {
+    font-family: dirtyline;
+    src: url(./dirtyline-36daysoftype-2022.otf);
+}
+
+@font-face {
+    font-family: syne;
+    src: url(./Syne-VariableFont_wght.ttf);
+}
+
+
+:root{
+    --darkmode: #121315;
+    --lightmode: #EEF3F3;
+    --darkshadow: #12131545;
+    --lightshadow: #eef3f34d;
+    --lightcard:#D4DBDB;
+    --darkcard:#17181B;
+    --darkcursur:#84b6b6;
+    --lightcursur:#121315c9;
+    --darkoverlay:#eef3f37e;
+    --lightoverlay:#121315c0;
+    --darkmodeovelay: #121315a8;
+    --lightmodeovelay: #d8dddd2c;
+    --darkstrok:#E0EEEE;
+    --lightstrok:#090b0b2c;
+}
+path{
+  stroke: var(--darkstrok);
+}
+#behindmouse{
+    height: 3vh;
+    width: 3vh;
+    background-color: var(--darkcursur) !important;
+    z-index: 9999999 !important;
+    overflow: hidden;
+}
+
+.liftblur{
+    background-color: var(--darkcursur);
+    filter: blur(20px);
+}
+.work a{
+    transition: all ease 0.5s;
+}
+.hoversbox:hover .hoverlink a{
+    border: none;
+    color:var(--darkmode);
+    font-weight: 500;
+    background: transparent;
+}
+.hoversbox:hover .liftblur{
+    opacity: 1;
+}
+
+
+.containers {
+  transition: background-color 0.3s ease;
+}
+
+.heading{
+    font-family: dirtyline;
+    font-size: 7vw;
+    color: white;
+}
+.logotext{
+    font-family: 'syne';
+    color: var(--lightmode);
+}
+.pera p{
+    font-size: 2vw;
+    font-weight: 500;
+    color: #8aa0a0;
+}
+/* .hovers{
+    transition:all 0.3s ease;
+} */
+
+.fivepera p{
+    font-size:3vw;
+    font-weight: 500;
+    color: white;
+    font-family: 'syne';
+    
+}
+
+.sixcardcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.rem; /* Adjust the gap as needed */
+    padding: 0 13vh; /* Apply padding as per the class name */
+}
+
+.cardpair {
+    display: flex;
+    gap:2vh;
+    justify-content: end;
+    flex-wrap: wrap;;
+}
+
+.card {
+    height: 55vh;
+    width: 48%;
+    padding: 0px  10vh;
+    background-color: #17181B;
+    transition: all ease 0.5s;
+    transition-delay: 0.001s;
+ }
+
+
+.card2 {
+    margin-top: 15vw;
+} 
+
+.card4 {
+    margin-top: 2vw;
+} 
+.card .up{
+    font-weight: 400;
+}
+.card .down{
+    font-family: 'dirtyline';
+}
+.card .down{
+    font-family: 'dirtyline';
+}
+
+.card1:hover{
+    background-color: #C73202;
+}
+.card2:hover{
+    background-color: #A3ABAB;
+}
+
+.card3:hover{
+    background-color: #A1C9B8;
+}
+
+.card4:hover{
+    background-color: #CFC13C;
+}
+
+.card:hover .up{
+    color: #17181B;
+}
+.card:hover .down{
+    color: #17181B;
+}
+.slides  h1 , .slides1 h1 {
+    font-size: 12vw;
+    font-family: 'dirtyline';
+    color: white;
+    line-height: 22vh;
+}
+.slides h1 {
+    padding-top: 2vh;
+}
+.wraper::-webkit-scrollbar{
+    display: none;
+}
+.slides1::-webkit-scrollbar{
+    display: none;
+}
+
+.slides {
+    transition: all 0.5s ease;
+    animation: slide 25s infinite linear;
+}
+
+.slides1 {
+    transition: all 0.5s ease;
+    animation: slide 25s infinite linear reverse;
+}
+
+.eight  .pera{
+    font-family: syne;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideReverse {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.socials h1{
+    font-family: syne;
+    color: white;
+    font-size: 3vw;
+    text-transform: capitalize;
+}
+.social{
+  transition:all  0.7s ease;
+}
+.social:hover{
+ width: 80%;
+}
+.img{
+    transition: all 1s ease;
+}
+.social:hover .img {
+    transform: rotate(360deg);
+}
+
+.fotter .coantact  {
+    font-family: syne;
+}
+.fotterimg:hover .overlay {
+    cursor: none;
+  }
+.overlay{
+ background: var(--darkmodeovelay);   
+ transition:  all  0.5s ease;
+}
+.overlay:hover {
+ background: radial-gradient(circle at var(--x) var(--y), transparent 20% , #121315a8);
+ 
+}
